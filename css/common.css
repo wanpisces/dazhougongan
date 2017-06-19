@@ -1,0 +1,169 @@
+/* ==========================================================================
+   页面公共样式设置
+ ============================================================================ */
+
+/* 对页面需用到的所有样式的重置
+ ============================================================================ */
+body, 
+div,
+dl,
+dt,
+dd, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+ol, 
+li, 
+span,
+pre,
+form, 
+fieldset,
+input, 
+button, 
+textarea, 
+blockquote,
+table, 
+th, 
+td {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px/1.5em "Microsoft Yahei", "微软雅黑",  sans-serif;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+strong, 
+th, 
+em {
+    font-weight: normal;
+    font-style: normal;
+}
+ol, 
+ul, 
+li {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #005da8;
+}
+img {
+    border: none;
+}
+input {
+    border: none;
+}
+input, 
+textarea, 
+button, 
+select {
+    font-family: "Microsoft Yahei";
+    outline: none;
+}
+input {
+    border: none;
+}
+button, 
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {
+    cursor: pointer;
+}
+
+/* 公用样式的设置
+ ============================================================================ */
+.clearfix:after {
+    display:block;
+    height:0;
+    clear:both;
+    content:"";
+    visibility:hidden;
+}
+.clearfix {
+    *zoom:1;
+}
+.lf {
+    float: left;
+}
+.rt {
+    float: right;
+}
+
+/* 轮播图样式 */
+.carousel{
+    position: relative;
+    overflow: hidden;
+}
+.carousel-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.carousel-img li{
+    float: left;
+    height: 100%;
+}
+.carousel-img li a{
+    display: block;
+    height: 100%;
+}
+.carousel-img li a img{
+    display: block;
+}
+.carousel-span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.carousel-span-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+.carousel-span-infor{
+    position: absolute;
+    height: 100%;
+}
+.carousel-span-infor a{
+    float: left;
+    display: none;
+}
+.carousel-span-infor a span{
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.carousel-buttons{
+    position: absolute;
+}
+.carousel-buttons a{
+    float: left;
+}
+.carl-btn{
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
